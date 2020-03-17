@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OutputSDK'
-  s.version          = '0.1.2'
+  s.version          = '0.1.4'
   s.swift_versions   = '5'
   s.summary          = 'a published SDK.'
 
@@ -23,7 +23,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SDK/**/*'
+  s.source_files = 'SDK/**/*.framework'
+  s.resource = 'resource/**'
+  
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
