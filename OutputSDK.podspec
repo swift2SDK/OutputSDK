@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OutputSDK'
-  s.version          = '0.1.8'
+  s.version          = '0.2.0'
   s.swift_versions   = '5'
   s.summary          = 'a published SDK.'
 
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.vendored_frameworks = 'SDK/*.framework'
-  s.resources = 'SDK/resources/**'
+  # s.resources = 'SDK/resources/**'
   
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
