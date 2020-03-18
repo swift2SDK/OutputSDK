@@ -10,8 +10,9 @@
 #endif
 #endif
 
-#import "SJOCUtils.h"
+#import "OCSDKUtils.h"
+#import "SJOCSDK.h"
 
-FOUNDATION_EXPORT double SJSwiftSDKVersionNumber;
-FOUNDATION_EXPORT const unsigned char SJSwiftSDKVersionString[];
+FOUNDATION_EXPORT double SJOCSDKVersionNumber;
+FOUNDATION_EXPORT const unsigned char SJOCSDKVersionString[];
 
