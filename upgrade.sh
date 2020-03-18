@@ -34,5 +34,10 @@ else
     # --skip-import-validation 跳过验证
     echo '\033[31m start upload version \033[0m'
     pod trunk push
-    echo 'upload success'
+    if test $? -eq 0
+    then
+        echo '\033[31m 🎉🎉🎉 upload success \033[0m'
+    else
+        echo 'trunk error'
+    fi
 fi
