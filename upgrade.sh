@@ -1,9 +1,12 @@
 
+
+echo '"'$1'"'
+
 # 提交 git
 commit() {
     git status
     git add .
-    git commit -m '"{$1}"'
+    git commit -m '"'$1'"'
     git pull
     git push
 }
