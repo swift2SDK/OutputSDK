@@ -1,7 +1,6 @@
 
-
+tag=$1
 cm_info='"'$1'"'
-echo $cm_info
 
 # 提交 git
 git_commit() {
@@ -15,7 +14,7 @@ git_commit() {
 
 # 打 tag
 git_tag() {
-    git tag -m $cm_info $1
+    git tag -a $tag -m $cm_info
     git push --tags
 }
 
@@ -28,7 +27,9 @@ then
 else
     git_commit
     git_tag
-    echo 'run next'
+    
+    # 推送当前版本
+    pod trunk push
 fi
 
 
