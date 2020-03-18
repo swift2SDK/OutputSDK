@@ -4,13 +4,19 @@ cm_info='"'$1'"'
 echo $cm_info
 
 # 提交 git
-commit() {
-    
+git_commit() {
+    echo '\033[31m start commit git \033[0m'
     git status
     git add .
     git commit -m $cm_info
     git pull
     git push
+}
+
+# 打 tag
+git_tag() {
+    git tag -m $cm_info $1
+    git push --tags
 }
 
 
@@ -20,7 +26,8 @@ then
     echo '\033[31m please input tag(eg: 1.2.4) \033[0m'
 
 else
-    commit
+    git_commit
+    git_tag
     echo 'run next'
 fi
 
