@@ -14,6 +14,7 @@ git_commit() {
 
 # 打 tag
 git_tag() {
+    echo '\033[31m start add tag \033[0m'
     git tag -a $tag -m $cm_info
     git push --tags
 }
@@ -31,5 +32,7 @@ else
     # 推送当前版本
     # --verbose 查看详细信息
     # --skip-import-validation 跳过验证
+    echo '\033[31m start upload version \033[0m'
     pod trunk push
+    echo 'upload success'
 fi
