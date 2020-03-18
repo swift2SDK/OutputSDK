@@ -29,15 +29,7 @@ else
     git_tag
     
     # 推送当前版本
+    # --verbose 查看详细信息
+    # --skip-import-validation 跳过验证
     pod trunk push
 fi
-
-
-
-
-
-
-
-# git tag -m "0.2.2" 0.2.2
-# git push --tags
-# pod trunk push OutputSDK.podspec
