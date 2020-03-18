@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OutputSDK'
-  s.version          = '1.3.8'
+  s.version          = '1.3.9'
   s.swift_versions   = '5'
   s.summary          = 'a published SDK.'
 
