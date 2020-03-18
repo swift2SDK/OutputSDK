@@ -1,12 +1,14 @@
 
 
-echo '"'$1'"'
+cm_info='"'$1'"'
+echo $cm_info
 
 # 提交 git
 commit() {
+    
     git status
     git add .
-    git commit -m '"'$1'"'
+    git commit -m $cm_info
     git pull
     git push
 }
