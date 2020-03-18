@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OutputSDK'
-  s.version          = '1.3.2'
+  s.version          = '1.3.3'
   s.swift_versions   = '5'
   s.summary          = 'a published SDK.'
 
@@ -24,10 +24,6 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.vendored_frameworks = 'SDK/*.framework'
-  # s.resources = 'SDK/resources/**'
-  
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Alamofire'
 end
